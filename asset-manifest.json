@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tech-magazine/static/css/main.82f59cf3.css",
+    "main.css": "/tech-magazine/static/css/main.fa0fccab.css",
     "main.js": "/tech-magazine/static/js/main.65f426f2.js",
     "static/media/sliderBack.jpg": "/tech-magazine/static/media/sliderBack.49ae8e4175a9b03f42a7.jpg",
     "static/media/item4.jpg": "/tech-magazine/static/media/item4.f164803d2b8289265e9a.jpg",
@@ -49,11 +49,11 @@
     "static/media/new.svg": "/tech-magazine/static/media/new.6cd1a0cada39f48dea86cacbc08c061b.svg",
     "static/media/arrowNext.svg": "/tech-magazine/static/media/arrowNext.6551900a572935decdc5e5f64f6524f4.svg",
     "static/media/arrowPrev.svg": "/tech-magazine/static/media/arrowPrev.49849dc5a5fe35e17cbbb59a2f6cd886.svg",
-    "main.82f59cf3.css.map": "/tech-magazine/static/css/main.82f59cf3.css.map",
+    "main.fa0fccab.css.map": "/tech-magazine/static/css/main.fa0fccab.css.map",
     "main.65f426f2.js.map": "/tech-magazine/static/js/main.65f426f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.82f59cf3.css",
+    "static/css/main.fa0fccab.css",
     "static/js/main.65f426f2.js"
   ]
 }

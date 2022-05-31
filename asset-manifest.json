@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tech-magazine/static/css/main.fa0fccab.css",
-    "main.js": "/tech-magazine/static/js/main.65f426f2.js",
+    "main.css": "/tech-magazine/static/css/main.4c8de5a0.css",
+    "main.js": "/tech-magazine/static/js/main.bcde4c40.js",
     "static/media/sliderBack.jpg": "/tech-magazine/static/media/sliderBack.49ae8e4175a9b03f42a7.jpg",
     "static/media/item4.jpg": "/tech-magazine/static/media/item4.f164803d2b8289265e9a.jpg",
     "static/media/item1.jpg": "/tech-magazine/static/media/item1.5aa1056b7e85ab3caf02.jpg",
@@ -49,11 +49,11 @@
     "static/media/new.svg": "/tech-magazine/static/media/new.6cd1a0cada39f48dea86cacbc08c061b.svg",
     "static/media/arrowNext.svg": "/tech-magazine/static/media/arrowNext.6551900a572935decdc5e5f64f6524f4.svg",
     "static/media/arrowPrev.svg": "/tech-magazine/static/media/arrowPrev.49849dc5a5fe35e17cbbb59a2f6cd886.svg",
-    "main.fa0fccab.css.map": "/tech-magazine/static/css/main.fa0fccab.css.map",
-    "main.65f426f2.js.map": "/tech-magazine/static/js/main.65f426f2.js.map"
+    "main.4c8de5a0.css.map": "/tech-magazine/static/css/main.4c8de5a0.css.map",
+    "main.bcde4c40.js.map": "/tech-magazine/static/js/main.bcde4c40.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa0fccab.css",
-    "static/js/main.65f426f2.js"
+    "static/css/main.4c8de5a0.css",
+    "static/js/main.bcde4c40.js"
   ]
 }

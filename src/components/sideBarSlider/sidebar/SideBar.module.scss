@@ -85,10 +85,10 @@
 		right: 10%;
 		z-index: 500;
 		border: 2px solid $accent;
-		animation: mobileMenu 0.5s linear;
 		display: none;
 	}
 	.sidebarActive {
+		animation: mobileMenu 0.5s linear;
 		display: block;
 	}
 }

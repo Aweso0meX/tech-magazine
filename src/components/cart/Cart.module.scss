@@ -73,7 +73,7 @@
 .title {
 	display: flex;
 	flex-direction: column;
-	font-size: 0.7re;
+	font-size: 0.7rem;
 }
 .title span:first-child {
 	font-weight: 800;
@@ -133,6 +133,7 @@
 	}
 	.cartItem img {
 		margin-right: 0;
+		height: 250px;
 	}
 	.title {
 		text-align: center;
@@ -146,10 +147,4 @@
 	.wrapper {
 		padding: 140px 10px;
 	}
-}
-@include mobile() {
-	// 568px--
-}
-@include mobile-s() {
-	// 414px--
 }

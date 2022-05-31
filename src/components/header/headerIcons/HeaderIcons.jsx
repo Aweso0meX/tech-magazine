@@ -31,31 +31,33 @@ const HeaderIcons = ({ setVisible, visible }) => {
 						<p>1</p>
 					</div>
 				</div>
+				<div className={styles.burgerWrapper}>
+					<div
+						onClick={() => setVisible(!visible)}
+						className={`${styles.itemIcons} ${styles.mobileCart}`}
+					>
+						<img className={styles.cartIcon} src={cart} alt='cartIcon' />
+						{cartItems.length > 0 && (
+							<div className={styles.Value}>
+								<p>{cartItems.length}</p>
+							</div>
+						)}
+					</div>
+					<div className={styles.cartText}>
+						<p className={styles.cartTitle}>Корзина</p>
+						<p className={styles.cartValue}>{cartValue} ₸</p>
+					</div>
+				</div>
 				<div
-					onClick={() => setVisible(!visible)}
-					className={`${styles.itemIcons} ${styles.mobileCart}`}
+					onClick={() => dispatch(toggleMobileMenu(!mobileMenuVisible))}
+					className={
+						mobileMenuVisible
+							? `${styles.hamburgerWrapper} ${styles.active}`
+							: styles.hamburgerWrapper
+					}
 				>
-					<img className={styles.cartIcon} src={cart} alt='cartIcon' />
-					{cartItems.length > 0 && (
-						<div className={styles.Value}>
-							<p>{cartItems.length}</p>
-						</div>
-					)}
+					<span className={styles.hamburgerSpan}></span>
 				</div>
-				<div className={styles.cartText}>
-					<p className={styles.cartTitle}>Корзина</p>
-					<p className={styles.cartValue}>{cartValue} ₸</p>
-				</div>
-			</div>
-			<div
-				onClick={() => dispatch(toggleMobileMenu(!mobileMenuVisible))}
-				className={
-					mobileMenuVisible
-						? `${styles.hamburgerWrapper} ${styles.active}`
-						: styles.hamburgerWrapper
-				}
-			>
-				<span className={styles.hamburgerSpan}></span>
 			</div>
 		</>
 	)

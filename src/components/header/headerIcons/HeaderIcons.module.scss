@@ -39,12 +39,17 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-left: 12px;
 }
 .cartTitle {
 	font-weight: 800;
 }
 .cartValue {
 	font-size: 11px;
+}
+.burgerWrapper {
+	display: flex;
+	align-items: center;
 }
 
 .hamburgerWrapper {
@@ -55,6 +60,7 @@
 	align-items: center;
 	display: none;
 }
+
 .hamburgerSpan {
 	display: inline-block;
 	height: 2px;
@@ -95,6 +101,12 @@
 	.hamburgerWrapper {
 		display: flex;
 		margin-left: 10px;
+	}
+	.mobileCart {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0;
 	}
 }
 @include tablet() {

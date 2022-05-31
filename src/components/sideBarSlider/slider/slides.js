@@ -10,4 +10,8 @@ export const slides = [
 	sliderImg,
 	sliderImg,
 	sliderImg,
+	sliderImg,
+	sliderImg,
+	sliderImg,
+	sliderImg,
 ]

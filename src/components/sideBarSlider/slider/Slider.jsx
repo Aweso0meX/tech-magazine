@@ -33,8 +33,8 @@ const Slider = () => {
 					},
 				}}
 			>
-				{slides.map(slide => (
-					<SwiperSlide>
+				{slides.map((slide, i) => (
+					<SwiperSlide key={i}>
 						<div
 							style={{
 								backgroundImage: `url(${slide})`,

@@ -19,6 +19,7 @@
 }
 .textWrapper {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 16px;
 }
 .more {
@@ -27,7 +28,7 @@
 	align-items: center;
 }
 .leftSide {
-	width: 50%;
+	width: 46%;
 	margin-right: 32px;
 }
 .rightSide {
@@ -48,4 +49,33 @@
 .more p {
 	margin-right: 10px;
 	cursor: pointer;
+}
+
+@include wide() {
+	//1350px --
+	.title {
+		padding: 0 20px;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.title {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.leftSide,
+	.rightSide {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@include mobile() {
+	// 568px--
+	.item {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
 }

@@ -20,3 +20,25 @@
 		border-bottom: 1px solid $special-text;
 	}
 }
+
+@include wide() {
+	//1350px --
+
+	.company {
+		width: 33%;
+	}
+}
+
+@include tablet() {
+	// 768px--
+	.company {
+		width: 50%;
+	}
+}
+@include mobile() {
+	// 568px--
+	.company {
+		width: 100%;
+		align-items: center;
+	}
+}

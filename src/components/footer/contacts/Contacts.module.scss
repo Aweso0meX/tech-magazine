@@ -53,3 +53,24 @@
 .hoverLinks:active:before {
 	right: 0;
 }
+
+@include wide() {
+	//1350px --
+	.contacts {
+		width: 33%;
+	}
+}
+
+@include tablet() {
+	// 768px--
+	.contacts {
+		width: 50%;
+	}
+}
+@include mobile() {
+	// 568px--
+	.contacts {
+		width: 100%;
+		align-items: center;
+	}
+}

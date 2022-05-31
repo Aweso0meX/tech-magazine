@@ -58,3 +58,20 @@
 	justify-content: space-between;
 	width: 155px;
 }
+
+@include wide() {
+	//1350px --
+	.slider {
+		max-width: none;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.slider {
+		max-height: 300px;
+	}
+	.slide {
+		min-height: 300px;
+	}
+}

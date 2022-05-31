@@ -34,3 +34,10 @@
 	color: #4f4f4f;
 	margin-right: 8px;
 }
+
+@include tablet() {
+	// 768px--
+	.headerTop {
+		display: none;
+	}
+}

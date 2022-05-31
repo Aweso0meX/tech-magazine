@@ -19,49 +19,49 @@ $placeholder-text: #aeaeb2;
 
 $breakpoint_hd_plus: 1920px;
 $breakpoint_hd: 1440px;
-$breakpoint_wide: 1200px;
+$breakpoint_wide: 1350px;
 $breakpoint_desktop: 992px;
 $breakpoint_tablet: 768px;
 $breakpoint_mobile: 568px;
 $breakpoint_mobile-s: 414px;
 
 @mixin hd() {
-	@media (max-width: $breakpoint_hd) {
+	@media screen and (max-width: $breakpoint_hd) {
 		//1440px ++
 		@content;
 	}
 }
 
 @mixin wide() {
-	@media (max-width: $breakpoint_wide) {
+	@media screen and (max-width: $breakpoint_wide) {
 		//1200px ++
 		@content;
 	}
 }
 
 @mixin desktop() {
-	@media (max-width: $breakpoint_desktop) {
+	@media screen and (max-width: $breakpoint_desktop) {
 		//992px ++
 		@content;
 	}
 }
 
 @mixin tablet() {
-	@media (max-width: $breakpoint_tablet) {
+	@media screen and (max-width: $breakpoint_tablet) {
 		//768px ++
 		@content;
 	}
 }
 
 @mixin mobile() {
-	@media (max-width: $breakpoint_mobile) {
+	@media screen and (max-width: $breakpoint_mobile) {
 		//568px ++
 		@content;
 	}
 }
 
 @mixin mobile-s() {
-	@media (max-width: $breakpoint_mobile-s) {
+	@media screen and (max-width: $breakpoint_mobile-s) {
 		//414px ++
 		@content;
 	}

@@ -21,10 +21,15 @@ function App() {
 
 	return (
 		<div className='App'>
-			<Header setVisible={setVisible} search={search} setSearch={setSearch} />
+			<Header
+				visible={visible}
+				setVisible={setVisible}
+				search={search}
+				setSearch={setSearch}
+			/>
 			<div className={styles.content}>
 				<MyCartSlider setVisible={setVisible} isVisible={visible}>
-					<Cart />
+					<Cart setVisible={setVisible} />
 				</MyCartSlider>
 				<SideBarSlider />
 				<ItemList items={filterItems} />

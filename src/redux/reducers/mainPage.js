@@ -3,9 +3,10 @@ import { items } from '../Data/itemList/items'
 
 const initialState = {
 	items: items,
-	isVisibleCart: true,
+	isVisibleCart: false,
 	cartItems: [],
 	cartValue: 0,
+	mobileMenuVisible: true,
 }
 export const mainPageSlice = createSlice({
 	name: 'main-page',
@@ -28,9 +29,18 @@ export const mainPageSlice = createSlice({
 				item => item.id !== action.payload
 			)
 		},
+		toggleMobileMenu(state, action) {
+			state.mobileMenuVisible = action.payload
+		},
 	},
 })
 
 export const mainPageReducer = mainPageSlice.reducer
-export const { addItem, removeItem, addValue, removeCart, changeValue } =
-	mainPageSlice.actions
+export const {
+	addItem,
+	removeItem,
+	addValue,
+	removeCart,
+	changeValue,
+	toggleMobileMenu,
+} = mainPageSlice.actions

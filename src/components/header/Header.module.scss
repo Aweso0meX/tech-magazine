@@ -21,3 +21,26 @@
 .logo {
 	margin-right: 85px;
 }
+
+@include wide() {
+	//1350px --
+	.logo {
+		margin-right: 0;
+	}
+	.headerMain {
+		justify-content: space-between;
+		padding: 0 20px;
+	}
+}
+@include tablet() {
+	// 768px--
+	.headerMain {
+		justify-content: space-between;
+	}
+	.logo {
+		max-width: 150px;
+	}
+	.headerMainWrapper {
+		margin-bottom: 0;
+	}
+}

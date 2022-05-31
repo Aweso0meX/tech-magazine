@@ -24,3 +24,10 @@
 	background-color: #fff;
 	cursor: pointer;
 }
+
+@include wide() {
+	//1350px --
+	.inputWrapper {
+		display: none;
+	}
+}

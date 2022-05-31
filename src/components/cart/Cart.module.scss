@@ -124,3 +124,29 @@
 .increment {
 	margin-bottom: 10px;
 }
+
+@include desktop() {
+	// 992px--
+	.cartItem {
+		flex-direction: column;
+		text-align: center;
+	}
+	.title {
+		text-align: center;
+	}
+	.title span:first-child {
+		margin-right: 0;
+	}
+}
+@include tablet() {
+	// 768px--
+	.wrapper {
+		padding: 140px 10px;
+	}
+}
+@include mobile() {
+	// 568px--
+}
+@include mobile-s() {
+	// 414px--
+}

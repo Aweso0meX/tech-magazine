@@ -5,8 +5,11 @@ import HeaderTop from './headerTop/HeaderTop'
 import styles from './Header.module.scss'
 import Search from './search/Search'
 import HeaderIcons from './headerIcons/HeaderIcons'
+import { useMediaQuery } from 'react-responsive'
+import SideBar from '../sideBarSlider/sidebar/SideBar'
 
-const Header = ({ search, setSearch, setVisible }) => {
+const Header = ({ search, setSearch, setVisible, visible }) => {
+	const MobileMenu = useMediaQuery({ query: '(max-width: 768px)' })
 	return (
 		<div className={styles.header}>
 			<HeaderTop />
@@ -15,7 +18,8 @@ const Header = ({ search, setSearch, setVisible }) => {
 					<div className={styles.headerMain}>
 						<img className={styles.logo} src={logo} alt='logo' />
 						<Search search={search} setSearch={setSearch} />
-						<HeaderIcons setVisible={setVisible} />
+						<HeaderIcons visible={visible} setVisible={setVisible} />
+						{MobileMenu && <SideBar />}
 					</div>
 				</div>
 			</div>

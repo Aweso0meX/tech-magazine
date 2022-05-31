@@ -21,3 +21,19 @@
 .wrapper img {
 	max-width: 100px;
 }
+
+@include wide() {
+	//1350px --
+	.wrapper {
+		padding: 36px 20px;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.item {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}

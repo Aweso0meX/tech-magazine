@@ -119,3 +119,25 @@
 	right: 16px;
 	transform: translateY(-50%);
 }
+
+@include wide() {
+	//1350px --
+	.item {
+		width: 30%;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.item {
+		width: 49%;
+	}
+}
+
+@include mobile() {
+	// 568px--
+	.item {
+		width: 100%;
+		margin: 0 auto;
+	}
+}

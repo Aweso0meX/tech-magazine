@@ -8,9 +8,15 @@ const FooterBottom = () => {
 		<div className={styles.bottom}>
 			<div className={styles.container}>
 				<div className={styles.wrapper}>
-					<img src={logo} alt='logo' />
-					<p>Политика конфиденциальности • Карта сайта </p>
-					<p>Copyright © 2013 - {today.getFullYear()} ТОО Компания Эврика</p>
+					<div className={styles.item}>
+						<img src={logo} alt='logo' />
+					</div>
+					<div className={styles.item}>
+						<p>Политика конфиденциальности • Карта сайта </p>
+					</div>
+					<div className={styles.item}>
+						<p>Copyright © 2013 - {today.getFullYear()} ТОО Компания Эврика</p>
+					</div>
 				</div>
 			</div>
 		</div>

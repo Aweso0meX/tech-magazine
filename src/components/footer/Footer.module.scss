@@ -15,9 +15,10 @@
 	font-family: $itemsFont;
 }
 
-.company,
-.buyers,
-.service,
-.contacts {
-	width: 20%;
+@include wide() {
+	//1350px --
+
+	.footerTopWrapper {
+		padding: 24px 20px;
+	}
 }

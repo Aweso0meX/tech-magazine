@@ -1,12 +1,20 @@
 import React, { useState } from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 import { links } from '../../../redux/Data/sidebar/navigate'
+import { useSelector } from 'react-redux'
 import styles from './SideBar.module.scss'
 
 const SideBar = () => {
+	const { mobileMenuVisible } = useSelector(state => state)
 	const [isActive, setIsActive] = useState(0)
 	return (
-		<div className={styles.sidebar}>
+		<div
+			className={
+				mobileMenuVisible
+					? `${styles.sidebar} ${styles.sidebarActive}`
+					: styles.sidebar
+			}
+		>
 			{links.map((link, i) => (
 				<div
 					onClick={() => setIsActive(i)}

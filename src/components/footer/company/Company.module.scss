@@ -1,0 +1,22 @@
+@import '../../../scss/variables';
+
+.company {
+	display: flex;
+	flex-direction: column;
+	width: 17%;
+}
+.companyTitle {
+	font-weight: 800;
+	margin-bottom: 23px;
+}
+.companyLink {
+	color: $special-text;
+	font-family: $itemsFont;
+	margin-bottom: 8px;
+	font-size: 12px;
+	border-bottom: 1px solid transparent;
+	transition: $transition;
+	&:hover {
+		border-bottom: 1px solid $special-text;
+	}
+}

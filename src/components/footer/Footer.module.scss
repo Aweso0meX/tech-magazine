@@ -4,14 +4,20 @@
 	max-width: $container-width;
 	margin: 0 auto;
 }
-.title {
-	font-size: 1.8rem;
-	font-weight: 800;
-	margin-bottom: 15px;
+.footer {
+	background-color: #fff;
 }
-.itemsWrapper {
+.footerTopWrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 32px;
+	padding: 24px 0;
+	font-family: $itemsFont;
+}
+
+.company,
+.buyers,
+.service,
+.contacts {
+	width: 20%;
 }

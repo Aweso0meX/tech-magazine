@@ -8,7 +8,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
-import { slides } from './slides'
+import { slides } from '../../../redux/Data/slider/slides'
 
 const Slider = () => {
 	return (

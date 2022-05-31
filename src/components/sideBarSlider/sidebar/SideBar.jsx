@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
-import { links } from './navigate'
+import { links } from '../../../redux/Data/sidebar/navigate'
 import styles from './SideBar.module.scss'
 
 const SideBar = () => {

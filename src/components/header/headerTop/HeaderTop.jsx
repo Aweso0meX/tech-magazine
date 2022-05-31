@@ -6,20 +6,22 @@ import styles from './HeaderTop.module.scss'
 
 const HeaderTop = () => {
 	return (
-		<div className={styles.container}>
-			<div className={styles.headerTop}>
-				<div className={styles.location}>
-					<img
-						className={styles.locationIcon}
-						src={locationIcon}
-						alt='location'
-					/>
-					<p className={styles.locationPlace}>Алматы</p>
-				</div>
-				<div className={styles.contact}>
-					<img className={styles.phoneIcon} src={phoneIcon} alt='phone' />
-					<p className={styles.contactTitle}>Помощь и консультация</p>
-					<img src={contactArrow} alt='arrow' />
+		<div style={{ backgroundColor: '#fff' }}>
+			<div className={styles.container}>
+				<div className={styles.headerTop}>
+					<div className={styles.location}>
+						<img
+							className={styles.locationIcon}
+							src={locationIcon}
+							alt='location'
+						/>
+						<p className={styles.locationPlace}>Алматы</p>
+					</div>
+					<div className={styles.contact}>
+						<img className={styles.phoneIcon} src={phoneIcon} alt='phone' />
+						<p className={styles.contactTitle}>Помощь и консультация</p>
+						<img src={contactArrow} alt='arrow' />
+					</div>
 				</div>
 			</div>
 		</div>

@@ -6,7 +6,7 @@ import styles from './Header.module.scss'
 import Search from './search/Search'
 import HeaderIcons from './headerIcons/HeaderIcons'
 
-const Header = () => {
+const Header = ({ search, setSearch, setVisible }) => {
 	return (
 		<div className={styles.header}>
 			<HeaderTop />
@@ -14,8 +14,8 @@ const Header = () => {
 				<div className={styles.container}>
 					<div className={styles.headerMain}>
 						<img className={styles.logo} src={logo} alt='logo' />
-						<Search />
-						<HeaderIcons />
+						<Search search={search} setSearch={setSearch} />
+						<HeaderIcons setVisible={setVisible} />
 					</div>
 				</div>
 			</div>

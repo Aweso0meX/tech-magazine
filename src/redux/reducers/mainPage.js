@@ -6,7 +6,7 @@ const initialState = {
 	isVisibleCart: false,
 	cartItems: [],
 	cartValue: 0,
-	mobileMenuVisible: true,
+	mobileMenuVisible: false,
 }
 export const mainPageSlice = createSlice({
 	name: 'main-page',

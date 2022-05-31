@@ -35,9 +35,10 @@
 .cartValue {
 	display: flex;
 	color: #fff;
+	margin-right: 30px;
 }
 .cartValue h4 {
-	margin-right: 20px;
+	margin-right: 5px;
 }
 .cartItem {
 	display: flex;
@@ -129,17 +130,26 @@
 	// 992px--
 	.cartItem {
 		flex-direction: column;
+		align-items: center;
 		text-align: center;
 	}
 	.cartItem img {
 		margin-right: 0;
-		height: 250px;
+		height: 200px;
+		width: 200px;
+	}
+	.terminal {
+		display: flex;
+		flex-direction: row;
 	}
 	.title {
 		text-align: center;
 	}
 	.title span:first-child {
 		margin-right: 0;
+	}
+	.increment {
+		margin-right: 15px;
 	}
 }
 @include tablet() {
